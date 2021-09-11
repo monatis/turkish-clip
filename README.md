@@ -2,7 +2,7 @@
 Google supported this work by providing Google Cloud credit. Thank you Google for supporting the open source! 🎉
 
 ## What is this?
-This model is a finetuned version of [dbmdz/distilbert-base-turkish-cased](https://huggingface.co/dbmdz/distilbert-base-turkish-cased) to be used as a text encoder in Turkish with [CLIP](https://github.com/openai/CLIP)'s `ViT-B/32` image encoder. It should be used with `clip_head.h5` from this repo.
+This work enables to use [OpenAI CLIP](https://github.com/openai/CLIP)'s `ViT-B/32` image encoder with a text encoder in Turkish. It is composed of a base model and a clip head model. The base model is a finetuned version of [dbmdz/distilbert-base-turkish-cased](https://huggingface.co/dbmdz/distilbert-base-turkish-cased) and published at [HuggingFace's Models Hub](https://huggingface.co/mys/distilbert-base-turkish-cased-clip). It should be used with `clip_head.h5` from this repo.
 
 ## Installation
 First, you need to install CLIP and its requirements according the prompts in [its repo](https://github.com/openai/CLIP). Then, clone this repo and all other requirements can be installed by using `requirements.txt`:
