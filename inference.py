@@ -5,7 +5,7 @@ from PIL import Image
 import torch
 import clip
 
-model_name = "../distilbert-base-turkish-cased-clip"
+model_name = "mys/distilbert-base-turkish-cased-clip"
 base_model = TFAutoModel.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 head_model = tf.keras.models.load_model("./clip_head.h5")
